@@ -1,6 +1,8 @@
 import random as rn
 import math
 import numpy as np
+import turtle
+from PIL import Image
 
 a="ab\rcd"
 b="abcda"
@@ -364,7 +366,7 @@ np.load(filename):          Loads an array from a .npy file
 
 ## SUBSTITUTION CIPHER ##
 
-# a cIpher in which each letter is replace with an specific letter mostly based on a key.
+# a cipher in which each letter is replace with an specific letter mostly based on a key.
 # CEASAR CIPHER is a special example of substitution cipher where each alphabet is shifted by a specific 
 # value giving us an cipher.
 
@@ -378,7 +380,124 @@ np.load(filename):          Loads an array from a .npy file
 # If the text encrypted using any other cypher then the common pattern in language can disappear leading to 
 # drawbacks.
 
-
-
 ###########################################################################################################################
+
+
+## CSV FILES ##
+
+# can use csv module
+# with open("file.csv",mode="r") as file:
+#   read =csv.reader(file)
+#   for row in read:
+#       print(row)
+
+# can use pandas too. pandas.read_csv("file.csv")  will read it into a dataframe
+
+## gmplot ##
+
+# it helps plotting data on google map using python.
+# gmap=gmplot.gmplot(latitude=,longitude=,value)
+
+
+## TURTLE MODULE ##
+
+'''
+# Create a screen
+screen = turtle.Screen()
+screen.bgcolor("lightblue")  # Optional background color
+
+# Create a turtle
+t = turtle.Turtle()
+t.shape("turtle")  # Choose shape ('turtle', 'arrow', 'circle', etc.)
+t.color("darkgreen")  # Color of the turtle
+t.speed(2)  # Speed of drawing (1 - slow, 10 - fast, 0 - no animation)
+
+'''
+
+# Moving
+
+'''
+t.forward(100)  # Move forward by 100 pixels
+t.backward(50)  # Move backward by 50 pixels
+t.right(90)     # Turn right by 90 degrees
+t.left(45)      # Turn left by 45 degrees
+
+'''
+
+# Pen control
+
+'''
+t.penup()       # Lift the pen (stop drawing)
+t.pendown()     # Lower the pen (start drawing)
+t.pensize(3)    # Set pen thickness
+t.color("blue") # Set pen color
+
+'''
+
+# Changing shape 
+
+'''
+t.shape("circle")   # Change turtle shape
+t.color("purple")   # Change turtle color
+
+'''
+
+# going to a position without drawing
+
+'''
+t.penup()
+t.goto(-100, 100)  # Move turtle to (x, y) coordinates
+t.pendown()
+
+'''
+
+# to end the game 
+
+'''
+
+# To end turtle.done()
+
+or close the window on click
+
+screen.exitonclick()
+'''
+'''
+screen=turtle.Screen()
+screen.bgcolor("blue")
+
+t=turtle.Turtle()
+
+t.color("black")
+t.shape("turtle")
+t.speed(2)
+t.penup()
+t.begin_fill()
+for i in range(8):
+    if (i&1):
+        t.pendown()
+    t.forward(100)
+    t.right(45)
+    t.penup()
+
+t.end_fill()
+t.pendown()
+t.goto(0,100)
+t.write("Hello world")
+screen.exitonclick()
+'''
+# in turtle by default pen is down
+
+## PILLOW ##
+
+# for opening, croping, etc of images
+
+img=Image.open("peacockFeather.jpg")
+img.show()
+print(img.format)
+print(img.size)
+print(img.mode)
+
+# methods
+
+# img.resize() and img.crop() are imp to me
 
