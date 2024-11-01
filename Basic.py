@@ -201,14 +201,17 @@ print("Hello"+3*"world")
 
 # all the remaining stuff in the course
 # all the things and concepts in the course
+# csv module 
+# gmplot purpose
+# turtle module
+# image opening using Pillow library
+# selenium
+# date and time module
+# calender module
 # matplotlib
 # pandas
 
-
-
-
 ##########################################################################################################
-
 
 ## RANDOM LIBRARY ##
 
@@ -349,6 +352,33 @@ np.load(filename):          Loads an array from a .npy file
 
 # ramanujan magic constant 139.
 
-# ramanujan multiplicative magic constant 1729
+# ramanujan multiplicative magic constant 1729.
 
+
+##########################################################################################################################
+
+## AUDIO ##
+
+# .wav or .wave files contain raw/high quality audio data. They are uncompressed files
+# librarys that can be used to work with them are wave, scipy.io.wavefile, pydub
+
+## SUBSTITUTION CIPHER ##
+
+# a cIpher in which each letter is replace with an specific letter mostly based on a key.
+# CEASAR CIPHER is a special example of substitution cipher where each alphabet is shifted by a specific 
+# value giving us an cipher.
+
+## Frequency analysis of substitution cipher ##
+
+# Here in natural language some character are more frequenty then some.
+# So we replace the most frequent ciphertext letter most likely plaintext counter-part.
+# we also use common letter pairing to refine accuracy.
+
+# It requires a large text for accuracy.
+# If the text encrypted using any other cypher then the common pattern in language can disappear leading to 
+# drawbacks.
+
+
+
+###########################################################################################################################
 
