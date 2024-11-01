@@ -333,15 +333,15 @@ np.load(filename):          Loads an array from a .npy file
 
 # np.dot(a,b) for matrix multiplication of a and b
 
-# np.sum(a) for array sum
+# np.sum(a,axis=) for array sum
 
 # np.mean(a) for array mean
 
 # np.max(a) and np.min(a) for max and min of the array
 
 
-
-
+# axis=0 for each column
+# axis=1 for each row
 
 ###########################################################################################################################
 
@@ -352,7 +352,7 @@ np.load(filename):          Loads an array from a .npy file
 
 # magic constant = sum of a row or col or diag.  (sumOfAllElements/no.rows)
 
-# ramanujan magic constant 139.
+# ramanujan magic constant 139. (22,12,18,87)
 
 # ramanujan multiplicative magic constant 1729.
 
@@ -377,7 +377,7 @@ np.load(filename):          Loads an array from a .npy file
 # we also use common letter pairing to refine accuracy.
 
 # It requires a large text for accuracy.
-# If the text encrypted using any other cypher then the common pattern in language can disappear leading to 
+# If the text encrypted using any other cipher then the common pattern in language can disappear leading to 
 # drawbacks.
 
 ###########################################################################################################################
@@ -530,7 +530,32 @@ print(img.mode)
 
 # datetime.datetime.now() for current date and time
 print(datetime.datetime.now())
+
+
+# Current date
+today = datetime.date.today()  # e.g., 2024-11-01
+print(today)
+# Specific date
+specific_date = datetime.date(2023, 12, 25)  # Christmas 2023
+print(specific_date)
+# Current time
+now = datetime.datetime.now()  # e.g., 2024-11-01 12:30:45.123456
+print(now)
+# Specific time
+specific_time = datetime.time(14, 30)  # 2:30 PM
+print(specific_time)
 # print(calendar.month())
+
+print(today + datetime.timedelta(days=456))
+
+
+print(calendar.month(2024,11))  # calendar for the month of a particular year
+
+print(calendar.weekday(2024,11,2))  # corresponding weekday for a date
+
+print(calendar.day_name[calendar.weekday(2024,11,2)])  # day name of a weekday
+
+print(calendar.calendar(2024))  # calendar for a specific year
 
 
 ##############################################################################################################################
@@ -550,8 +575,6 @@ Checked till 5.76 x 10^18
 # web pages are ranked on the basis of random walk.
 # PageRank relies heavily Hyperlink network between web pages.
 # degree of separation: distance btw nodes.
-
-
 
 # to draw on screen:                                turtle
 # audio:                                            wave, scipy, pydub
