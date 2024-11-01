@@ -3,6 +3,8 @@ import math
 import numpy as np
 import turtle
 from PIL import Image
+import datetime
+import calendar
 
 a="ab\rcd"
 b="abcda"
@@ -21,7 +23,7 @@ print("aaba".replace("b","c"))
 
 # methods 
 
-# find(), index(), isDigit(), isalpha(), lower(), upper(), islower(), isupper(), strip(), replace
+# find(), index(), isDigit(), isalpha(), lower(), upper(), islower(), isupper(), strip(), replace()
 # lstrip(), rstrip(), capitalize(), startswith(), endswith()
 
 # index== gives error is substring not found
@@ -36,9 +38,7 @@ print(int(oct(146),8))
 for i in range(10):
     print(i,end=' ')
 
-
 ###################################################################################################
-
 
 #List#
 
@@ -169,7 +169,7 @@ with open("./mooc.txt","r+") as file:
 
 ##############################################################################################################
 
-## MISCLLENOUS FUNCTION AND OTHER STUFF ##
+## MISCELLANEOUS FUNCTION AND OTHER STUFF ##
 
 # MAP AND FILTER #
 # (callback,iterable)  --> will return iterable not a list 
@@ -490,14 +490,79 @@ screen.exitonclick()
 ## PILLOW ##
 
 # for opening, croping, etc of images
-
+'''
 img=Image.open("peacockFeather.jpg")
 img.show()
 print(img.format)
 print(img.size)
 print(img.mode)
 
+'''
+
 # methods
 
 # img.resize() and img.crop() are imp to me
 
+###########################################################################################################################
+
+# VADER is generally used in sentimental analysis to detect emotional intensity
+
+# PIL (Pillow) is used in image enhancement.
+
+# a significant information can be extracted from a image using image enhancemenet.
+
+###################################################################################################################
+
+## FLAMES ##
+
+# write both the names
+# remove common characters from the names
+# removes letters from FLAMES in a cycle using the remaining count of letters
+
+## SELENIUM ##
+
+# to automate the web browser
+# webdriver.chrome() is used to control the web browser programmatically.
+# driver.get(url) opens a specific url in web browser
+# input field.send keys(Keys.RETURN) : to simulate pressing the enter key
+
+## DATE TIME AND CALENDER ##
+
+# datetime.datetime.now() for current date and time
+print(datetime.datetime.now())
+# print(calendar.month())
+
+
+##############################################################################################################################
+
+'''
+Collatz conjecture is an unsolved problem in mathematics. 
+
+If n== even: n=n/2
+else n=3*n+1
+
+it is claimed that n will reach 1 eventually.
+
+Checked till 5.76 x 10^18
+'''
+
+# google use random walk simulation to rank web pages.
+# web pages are ranked on the basis of random walk.
+# PageRank relies heavily Hyperlink network between web pages.
+# degree of separation: distance btw nodes.
+
+
+
+# to draw on screen:                                turtle
+# audio:                                            wave, scipy, pydub
+# sentimental analysis:                             VADER
+# image display/enchancement:                       PIL (Pillow)
+# plot data on google maps:                         gmplot
+# csv:                                              csv, pandas (pd.read_csv())
+# plots:                                            matplotlib.pyplot
+# data:                                             numpy
+# nlp:                                              nltk    nltk.download() for downloading necessary packages
+# for working with graphs related to networks:      NetworkX
+# for visualizing and analyzing large networks:     Gephi
+# to generate random numbers:                       random
+# to automate web browsers                          selenium
